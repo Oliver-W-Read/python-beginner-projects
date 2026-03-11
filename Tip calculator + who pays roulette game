@@ -1,0 +1,20 @@
+import random
+#random is a module
+
+bill=float(input("Hello. Can you tell me how much the full bill is?"))
+#bill=variable float=function input=function
+tip=int(input("Thanks. And how much would you like to tip in % ? 10, 12, 15"))
+#tip=variable int=function
+
+tip_amount=bill*tip/100
+full_bill=tip_amount+bill
+#tip_amount=variable #full_bill=variable
+
+friends=input("Tell me the names of each player ")
+#friends=variable
+friends_list=friends.split()
+chosen=random.choice(friends_list)
+#friends_list is a new variable with a function .split() is a string method that splits a string into a list
+print(f"{chosen} must pay ${full_bill:.2f}")
+#f string so we can print data from variable or in this case variables.
+# .2f formats a float to display 2 decimal places.
